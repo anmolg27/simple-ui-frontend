@@ -1,0 +1,79 @@
+.show-bill-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.show-bill-modal__box {
+  border-radius: 1rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 3rem 1rem 1rem 1rem;
+  width: 60rem;
+  /* height: 80%; */
+}
+.show-bill-modal__room-bill {
+  background-color: rgb(203, 231, 255);
+  border-radius: 3px;
+  padding: 1rem;
+}
+.show-bill-modal__room-bill > h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.show-bill-modal__room-bill > h3 {
+  text-align: end;
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+.show-bill-modal__room-bill-box {
+}
+.show-bill-modal__room-bill-box-header {
+  /* background-color: rgb(255, 248, 240); */
+}
+.show-bill-modal__room-bill-box-header > * {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 3px;
+  /* font-size: 2rem; */
+}
+.show-bill-modal__room-bill-content {
+  align-content: flex-start;
+  padding-top: 4px;
+  /* height: 15rem; */
+
+  /* overflow-y: scroll; */
+}
+/* .show-bill-modal__room-bill-content::-webkit-scrollbar {
+  width: 0;
+} */
+.show-bill-modal__room-bill-content-row:nth-child(even) {
+  background-color: rgb(226, 254, 255);
+}
+.show-bill-modal__room-bill-content-row:nth-child(odd) {
+  background-color: rgb(247, 247, 247);
+}
+.show-bill-modal__room-bill-content-row > * {
+  text-align: center;
+  margin-bottom: 3px;
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 992px) {
+  .show-bill-modal__box {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .show-bill-modal__box {
+    width: 90%;
+  }
+}

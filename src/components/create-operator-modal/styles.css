@@ -1,0 +1,31 @@
+.create-operator-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.create-operator-modal__box {
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 3rem 4rem 1rem 4rem;
+  width: 50rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .create-operator-modal__box {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .create-operator-modal__box {
+    width: 90%;
+  }
+}

@@ -1,0 +1,118 @@
+.addon-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.addon-modal__box {
+  border-radius: 1rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 3rem 1rem 1rem 1rem;
+  width: 50rem;
+  /* height: 80%; */
+}
+.addon-modal__box > h1 {
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 4rem;
+  font-weight: 400;
+  color: darkslategray;
+}
+.add-on__details-box {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: springgreen;
+  border-radius: 0.5rem;
+  color: brown;
+}
+.add-on__detail-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-on__detail-col > h3 {
+  font-size: 2rem;
+}
+.add-on__detail-col > p {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+.addon-modal__table-container {
+  margin: 1rem auto;
+  height: 20rem;
+  overflow-y: scroll;
+  border: 0.5rem solid #eee;
+  border-radius: 0.5rem;
+  padding-left: 0;
+  padding-right: 3rem;
+}
+.addon-modal__table-container::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.addon-modal__table-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.addon-modal__table-container::-webkit-scrollbar-thumb {
+  background-color: #36919b;
+}
+
+.addon-modal__table .txt-field {
+  margin-top: 1rem;
+}
+.addon-modal__table {
+  position: relative;
+}
+.addon-modal__table img {
+  cursor: pointer;
+  position: absolute;
+  background-color: rgb(231, 63, 63);
+  padding: 0.7rem;
+  right: -2.5rem;
+  top: 0;
+  transform: translateY(1.5rem);
+}
+.addon-modal__table .input-box {
+  padding: 0 0.2rem;
+}
+.addon-modal__table > div {
+  padding: 0;
+}
+.addon-modal__form .input-box {
+  font-size: 1.2rem;
+}
+.add-on__submit-button-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+.add-on__submit-button-container > button {
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: springgreen;
+  color: beige;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+  .addon-modal__box {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .addon-modal__box {
+    width: 90%;
+  }
+}

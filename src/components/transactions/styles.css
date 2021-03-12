@@ -1,0 +1,29 @@
+.transaction-box {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 0.5rem 0;
+  max-width: 15rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.transaction-box > h3 {
+  display: inline-block;
+  background-image: linear-gradient(to right, #36919b, #24818b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.transaction-box > button {
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1.5px solid rgb(216, 141, 3);
+  /* color: white; */
+  width: 100%;
+  transition: all 0.3s;
+  margin-bottom: 1rem;
+}
+.transaction-box > button:hover {
+  background-color: rgb(216, 141, 3);
+}

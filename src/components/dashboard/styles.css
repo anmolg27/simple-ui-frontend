@@ -1,0 +1,227 @@
+.dashboard-home-container {
+  height: 100%;
+  width: 100%;
+}
+.dashboard-home__box-1 {
+  transition: all 0.1s;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-size: 2rem;
+  text-align: left;
+  color: black;
+  border: none;
+  width: 100%;
+  height: 5rem;
+}
+.dashboard-home__box-1.check-in {
+  background-color: #ddf7e1;
+}
+.dashboard-home__box-1.add-rooms {
+  background-color: #f3f7dd;
+}
+.dashboard-home__box-1.reservation {
+  background-color: #f9e9dc;
+}
+.dashboard-home__box-1.booking-history {
+  background-color: #ddf5f7;
+}
+.dashboard-home__box-1 > span {
+  border-radius: 0.5rem;
+  height: 100%;
+  padding: 1rem;
+  display: inline-block;
+}
+.dashboard-home__box-1:hover {
+  transform: translateY(-0.5rem) scale(1.02);
+  box-shadow: 0.4rem 0.4rem 1rem rgba(0, 0, 0, 0.1);
+}
+.dashboard-home__box-1:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0.2rem 0.7rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.dashboard-home__border {
+  border-top: solid rgba(87, 87, 87, 0.5) 2px;
+}
+/* .dashboard-home__main {
+  height: calc(100% - 10rem - 2px);
+} */
+.dashboard-home__table > h2 {
+}
+.dashboard-home__table {
+  /* height: 100%; */
+  /* height: 100%; */
+  padding: 1rem;
+  background-color: azure;
+  border-radius: 5px;
+}
+.dashboard__edit-all-button {
+  border: none;
+  background-color: tomato;
+  color: white;
+  padding: 0rem 1rem;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+}
+
+.dashboard-home__table-list {
+  background: rgba(255, 242, 62, 0.103);
+
+  border-radius: 5px;
+  box-shadow: 0 0 1rem rgba(27, 206, 212, 0.25);
+}
+.dashboard-home__table-content {
+  height: 44rem;
+  overflow-y: scroll;
+  align-content: flex-start;
+}
+.dashboard-home__table-content::-webkit-scrollbar {
+  width: 0;
+}
+.dashboard-home__table-row:nth-child(even) {
+  background-color: rgba(240, 230, 140, 0.651);
+  /* padding: 0.5rem 0rem; */
+}
+.dashboard-home__table-row:nth-child(odd) {
+  background-color: rgba(214, 214, 214, 0.644);
+}
+.dashboard-home__table-row {
+  font-size: 1.6rem;
+  padding: 0.2rem 0rem;
+}
+.dashboard-home__table-heading-row {
+  font-size: 2rem;
+  /* margin-bottom: 0.5rem; */
+}
+.dashboard-home__table-row > p {
+  /* padding: 0.5rem 2rem; */
+}
+
+.dashboard__edit > i {
+  cursor: pointer;
+  transform: translateY(30%);
+  /* height: 3rem; */
+  font-size: 2rem;
+  color: seagreen;
+  transition: all 0.1s;
+}
+.dashboard__edit > i:hover {
+  color: rgb(69, 161, 115);
+  transform: scale(1.1) translateY(30%);
+}
+.dashboard-home__table-heading-row > h3,
+.dashboard-home__table-row > p {
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  font-size: inherit;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.dashboard__pay-button,
+.dashboard__edit-button {
+  /* height: 100%; */
+  border: none;
+  border-radius: 5px;
+  /* background-color: rgb(30, 121, 75); */
+  color: white;
+  padding: 0.5rem 1.5rem;
+}
+.dashboard__edit-button {
+  background-color: rgb(30, 59, 121);
+}
+.dashboard__pay-button {
+  /* height: 100%; */
+  /* border: none; */
+  /* border-radius: 5px; */
+  background-color: rgb(30, 121, 75);
+  /* color: white; */
+  /* padding: 0.5rem 1.5rem; */
+}
+.dashboard-home__load-more {
+  /* height: 5rem; */
+  /* padding-top: 1rem; */
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: azure;
+}
+.dashboard-home__load-more > button {
+  /* cursor: pointer; */
+  border: none;
+  display: inline-block;
+  background-color: rgb(243, 243, 243);
+  padding: 0.8rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.dashboard-home__load-more > button:hover {
+  background-color: rgb(88, 88, 88);
+}
+
+.dashboard-home__load-more > button > * {
+  display: inline-block;
+  color: rgb(190, 119, 190);
+  margin-bottom: 0;
+  transition: all 0.2s;
+}
+.dashboard-home__load-more > button:hover > * {
+  /* cursor: pointer; */
+  /* display: inline-block; */
+  color: rgb(102, 236, 69);
+}
+.dashboard-home__load-more > button > i {
+  margin-left: 0.5rem;
+}
+/* load-more-button{} */
+
+.dashboard__loading-text {
+  vertical-align: super;
+}
+.dashboard__spinner-border {
+  height: 3.5rem !important;
+  width: 3.5rem !important;
+}
+
+@media only screen and (max-width: 1280px) {
+  /* .dashboard-home__table {
+    height: calc(100% - 2.1rem);
+  } */
+  /* .dashboard-home__table__heading {
+    font-size: 1.7rem;
+    height: 2.5rem;
+  } */
+  /* .dashboard-home__table__buttons > button {
+    font-size: 1.3rem;
+    padding: 1px 0.5rem;
+    height: 2.5rem;
+  } */
+  /* .dashboard-home__table__buttons > button > img {
+
+  } */
+}
+
+@media screen and (max-width: 1127px) {
+  /* .dashboard-home__table > .content {
+    
+  } */
+  /* .dashboard-home__main {
+    height: unset;
+  }
+  .dashboard-home-container > div:first-child > div:nth-child(3),
+  .dashboard-home-container > div:first-child > div:nth-child(4) {
+    margin-top: 1rem;
+  }
+  .dashboard-home__table__heading {
+    margin-bottom: 0rem;
+  }
+  .dashboard-home__table {
+    height: calc(100% - 6.2rem);
+  }
+  .dashboard-home__col {
+    height: 30rem;
+  }
+  .dashboard-home__table__buttons {
+    text-align: start;
+  } */
+}

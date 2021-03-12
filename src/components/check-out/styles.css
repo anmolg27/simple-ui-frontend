@@ -1,0 +1,203 @@
+.check-out {
+  height: 100%;
+  position: relative;
+  /* background-color: orangered; */
+}
+.check-out > h2 {
+  font-size: 2.5rem;
+}
+.check-out__invoice-number {
+  width: 20rem;
+  position: absolute;
+  top: -1%;
+  right: 0;
+}
+.check-out__first-row {
+  padding: 1rem;
+  background-color: whitesmoke;
+  border-radius: 3px;
+}
+.check-out__customer-details {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+.check-out__customer-name,
+.check-out__mobile {
+  font-size: 2rem;
+}
+.check-out__mobile {
+}
+.check-out__vehicle,
+.check-out__address {
+  font-size: 1.8rem;
+}
+
+.check-out__table {
+  margin: 0rem !important;
+  align-content: flex-start;
+  /* height: 15rem; */
+  /* background-color: rgb(226, 226, 226); */
+  /* border: 1rem solid rgb(218, 218, 218); */
+  border-radius: 1rem;
+  /* overflow-y: scroll; */
+}
+.check-out__heading-row > * {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* mppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp */
+/* .check-out__row > * {
+  height: min-content !important;
+} */
+.check-out__heading-row {
+  margin-bottom: 1.5rem;
+}
+.check-out__row > * {
+  text-align: center;
+}
+.check-out__row > p > input {
+  width: 100%;
+}
+.check-out__row * {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgb(61, 61, 61);
+}
+.check-out__gst-box,
+.check-out__extra-charges-box {
+  display: flex;
+}
+.check-out__extra-charges-input-box {
+  position: relative;
+}
+.check-out__extra-charges-input-box > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0.5rem, -2rem);
+}
+
+.check-out__gst-box > select,
+.check-out__extra-charges-box > div > input {
+  width: 8rem;
+  border-radius: 3px;
+  padding: 0.5rem;
+
+  border: 1px solid black;
+}
+
+.check-out__gst-box > p,
+.check-out__extra-charges-box > p {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  width: 15rem;
+  padding-right: 1rem;
+}
+.check-out__asset-col {
+  align-content: flex-start;
+  /* margin-top: 1rem; */
+  padding: 1rem;
+  background-color: whitesmoke;
+  /* height: 20rem; */
+  border-radius: 0.2rem;
+  height: fit-content;
+}
+/* .check-out__asset-heading-row {
+  align-content: flex-start;
+} */
+.check-out__asset-heading-row > div {
+  text-align: center;
+}
+.check-out__asset-heading-row h3 {
+  font-size: 2rem;
+}
+.check-out__asset-discount {
+  width: 50%;
+}
+.check-out__asset-details {
+  align-content: flex-start;
+  /* padding-top: 2rem; */
+  max-height: 20rem;
+  overflow-y: scroll;
+}
+
+.check-out__asset-details::-webkit-scrollbar {
+  width: 5px;
+}
+
+.check-out__asset-details::-webkit-scrollbar-track {
+  background-color: rgb(207, 207, 207);
+  border-radius: 0.2rem;
+}
+.check-out__asset-details::-webkit-scrollbar-thumb {
+  background-color: rgb(144, 255, 240);
+}
+.check-out__asset-row > div {
+  /* align-content: flex-start; */
+  text-align: center;
+}
+.check-out__asset-row p {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.check-out_total-box {
+  text-align: center;
+}
+.check-out_total-box > h2 {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+.check-out_total-box {
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+  justify-content: space-between;
+}
+.check-out_total-box > * {
+  /* margin-left: 2rem; */
+  margin-bottom: 0;
+}
+.check-out_total-box > h2 {
+  font-size: 2.5rem;
+  text-align: end;
+}
+.check-out_total-box > p {
+  display: inline-block;
+  text-align: end;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.check-out__submit {
+  text-align: end;
+}
+.check-out__submit button {
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: white;
+  background-color: green;
+}
+@media only screen and (max-width: 650px) {
+  .check-out__customer-name-box > p,
+  .check-out__customer-mobile-box > p,
+  .check-out__customer-name-box > h3,
+  .check-out__customer-mobile-box > h3,
+  .check-out__heading-row > * {
+    font-size: 1.8rem;
+  }
+  .check-out__row * {
+    font-size: 1.5rem;
+  }
+  .check-out__customer-name-box > p,
+  .check-out__customer-mobile-box > p {
+    transform: translateY(-2px);
+    /* font-size: 2.5rem; */
+    /* margin-left: 2rem; */
+  }
+  html {
+    font-size: 50.5% !important;
+  }
+}

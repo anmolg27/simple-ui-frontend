@@ -1,0 +1,86 @@
+.bill-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.bill-modal__box {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 4rem 1.5rem 2rem 1rem;
+  width: 30rem;
+}
+
+.bill-modal__close-button {
+  cursor: pointer;
+  display: flex;
+  padding: 0.7rem;
+  position: absolute;
+  top: 0rem;
+  right: 0.4rem;
+  color: red;
+  border-radius: 0.5rem;
+}
+.bill-modal__method-box {
+  height: 30rem;
+  padding: 1rem 3rem 1rem 1rem;
+  align-content: flex-start;
+  /* background-color: springgreen; */
+  border: 1px solid black;
+  border-radius: 3px;
+  overflow-y: scroll;
+}
+.bill-modal__method-box::-webkit-scrollbar {
+  width: 6px;
+}
+.bill-modal__method-box::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 128, 128, 0.87);
+}
+.bill-modal__method-box::-webkit-scrollbar-track {
+  background-color: rgba(149, 212, 212, 0.452);
+  border-radius: 0px 3px 3px 0px;
+}
+.bill-modal__method-box > div {
+  position: relative;
+}
+.bill-modal__method-box > div > img {
+  position: absolute;
+  top: 0;
+  right: -4rem;
+  transform: translate(-100%, 100%);
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: red;
+  cursor: pointer;
+}
+.bill-modal__later-button,
+.bill-modal__print-button {
+  font-size: 2rem;
+  border-radius: 3px;
+  padding: 1rem;
+  color: white;
+}
+
+.bill-modal__print-button {
+  margin-top: 1rem;
+  background-color: rgb(12, 150, 81);
+}
+
+.bill-modal__later-button {
+  margin-top: 0.5rem;
+  background-color: rgb(65, 65, 177);
+}
+.bill-modal__later-button:disabled {
+  margin-top: 0.5rem;
+  background-color: rgb(182, 182, 182);
+}

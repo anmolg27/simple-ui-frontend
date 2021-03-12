@@ -1,0 +1,62 @@
+.delete-operator-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: fadeIn ease-out 0.1s;
+  animation-fill-mode: backwards;
+}
+.delete-operator-modal__box {
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* height: 30rem; */
+  /* width: 40rem; */
+  border-radius: 5px;
+  background-color: #eee;
+}
+.delete-operator-modal__text {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.delete-operator-modal__buttons {
+  margin-top: 2rem;
+  text-align: right;
+}
+.delete-operator-modal__buttons > button {
+  border: none;
+  padding: 0.5rem 2rem;
+  color: white;
+  border-radius: 4px;
+  backface-visibility: hidden;
+  transition: all 0.15s;
+}
+.delete-operator-modal__buttons > button:first-child {
+  background-color: rgb(33, 138, 33);
+}
+.delete-operator-modal__buttons > button:last-child {
+  background-color: rgb(216, 0, 0);
+}
+.delete-operator-modal__buttons > button:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+.delete-operator-modal__buttons > button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .delete-operator-modal__box {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .delete-operator-modal__box {
+    width: 90%;
+  }
+}

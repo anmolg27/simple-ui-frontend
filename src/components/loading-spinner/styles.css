@@ -1,0 +1,32 @@
+.component-loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component-loading-spinner .loader {
+  margin-left: 3rem;
+  display: inline-block;
+
+  border: 0.5rem solid #f3f3f3;
+  border-top: 0.5rem solid rgb(8, 197, 81);
+  border-bottom: 0.5rem solid orange;
+  /* border-left: 0.8rem solid red; */
+  /* border-right: 0.8rem solid rgb(38, 111, 247); */
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+.component-loading-spinner p {
+  display: inline-block;
+  font-size: 5rem;
+}
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

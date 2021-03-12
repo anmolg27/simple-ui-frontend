@@ -1,0 +1,22 @@
+.edit-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.edit-modal__box {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 4rem 1.5rem 2rem 1rem;
+  width: 60rem;
+}

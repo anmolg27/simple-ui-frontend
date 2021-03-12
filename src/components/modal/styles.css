@@ -1,0 +1,137 @@
+.modal-container {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.507);
+
+  animation: fadeIn ease-out 0.3s;
+  animation-fill-mode: backwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal-box {
+  width: 40rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgb(168, 168, 168); */
+  background-color: white;
+  padding: 3rem 1rem 1rem 1rem;
+}
+.modal-box > div:not(:first-child) {
+  /* display: flex; */
+  position: relative;
+  /* margin-top: 1.5rem; */
+  margin-bottom: 3rem;
+  align-items: center;
+}
+.modal-box .modal-label {
+  /* width: 15rem; */
+  position: relative;
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.modal-box > div:nth-child(2) {
+  margin-top: 2rem;
+}
+.modal-label + input,
+.modal-label + select {
+  border: 1px #bbb solid;
+  border-radius: 0.5rem;
+  height: 3.5rem;
+  width: 100%;
+  transition: border-color 0.1s;
+  padding-left: 2px;
+}
+
+.modal-label + input:focus,
+.modal-label + select:focus {
+  border: 3px solid green;
+}
+.modal-label + input:disabled {
+  background-color: #ddd;
+}
+
+.close-button {
+  display: flex;
+  padding: 0.7rem;
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+.close-button img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.close-button:hover {
+  background-color: rgba(228, 25, 25, 0.692);
+  cursor: pointer;
+}
+
+.modal-container .save-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  height: 4.5rem;
+  background-color: rgb(165, 165, 165);
+  transition: all 0.3s;
+  color: white;
+  border: 1px #bbb solid;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  /* width: 100%; */
+  /* padding: 1.25rem 0.5rem; */
+}
+.modal-container .save-btn:hover {
+  background-color: rgb(126, 192, 27);
+  /* color: black; */
+}
+.modal-error {
+  text-transform: capitalize;
+  /* margin-top: 1rem; */
+  /* margin-bottom: 0.5rem; */
+  display: block;
+
+  /* background-color: rgb(255, 166, 166); */
+  color: red;
+  font-size: 1.8rem;
+  /* padding: 0.5rem; */
+  border-radius: 5px;
+  /* text-align: center; */
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(100%);
+}
+.modal-error > p {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 992px) {
+  .modal-box {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .modal-box {
+    width: 90%;
+  }
+}

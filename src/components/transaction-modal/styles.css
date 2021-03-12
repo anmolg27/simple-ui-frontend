@@ -1,0 +1,138 @@
+.transaction-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.transaction-modal__box {
+  border-radius: 1rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 3rem 4rem 1rem 4rem;
+  width: 90%;
+  /* height: 80%; */
+  text-align: center;
+}
+.transaction-modal__general-detail-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* .transaction-modal__general-detail,
+  .transaction-modal__extra-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+.transaction-modal__general-detail {
+  /* width: 30rem; */
+  width: 12rem;
+}
+.transaction-modal__general-detail > h4 {
+  font-size: 2rem;
+  /* display: inline-block; */
+}
+.transaction-modal__general-detail > p {
+  font-size: 1.8rem;
+  /* display: inline-block; */
+}
+.transaction-modal__extra-detail-box {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+/* .transaction-modal__extra-detail-sub-box {
+    display: flex;
+    justify-content: space-around;
+  } */
+.transaction-modal__extra-detail {
+  text-transform: capitalize;
+  text-align: center;
+}
+.transaction-modal__extra-detail > h4 {
+  font-size: 1.8rem;
+}
+.transaction-modal__extra-detail > p {
+  font-size: 1.6rem;
+}
+.transaction-modal__rooms-table,
+.transaction-modal__extra-charges-table {
+  background-color: springgreen;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.transaction-modal__header-row {
+  background-color: slategray;
+  color: whitesmoke;
+}
+.transaction-modal__header-row > div {
+  text-align: center;
+}
+.transaction-modal__details-box {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+.transaction-modal__details-box > div > div {
+  text-align: center;
+}
+.transaction-modal__box > button {
+  padding: 0.5rem 2rem;
+  border: none;
+  color: white;
+  margin-top: 1rem;
+  border-radius: 4px;
+  font-size: 2rem;
+}
+
+.transaction-modal__edit-guest-button {
+  background-color: rgb(255, 166, 0);
+}
+.transaction-modal__edit-bill-button {
+  background-color: rgb(0, 60, 255);
+  margin-left: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  .transaction-modal__box {
+    width: 80%;
+  }
+  .transaction-modal__container {
+    overflow-y: scroll;
+    height: 80vh;
+  }
+  .transaction-modal__header-row h3 {
+    font-size: 1.4rem;
+  }
+  .transaction-modal__details-box {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .transaction-modal__box {
+    width: 90%;
+  }
+
+  .transaction-modal__general-detail > h4 {
+    font-size: 1.7rem;
+    /* display: inline-block; */
+  }
+  .transaction-modal__general-detail > p {
+    font-size: 1.2rem;
+    /* display: inline-block; */
+  }
+  .transaction-modal__extra-detail > h4 {
+    font-size: 1.5rem;
+  }
+  .transaction-modal__extra-detail > p {
+    font-size: 1.2rem;
+  }
+}

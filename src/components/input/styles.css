@@ -1,0 +1,73 @@
+.txt-field {
+  position: relative;
+
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.txt-field > label {
+  margin: 0rem;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  color: grey;
+  transform: translate(0.6rem, 1rem) scale(1);
+  transition: all 0.2s;
+}
+
+.txt-field > input,
+.txt-field > button {
+  border: 1px #bbb solid;
+  font-size: 1.4rem;
+  color: black;
+  border-radius: 0.5rem;
+  height: 3.5rem;
+  width: 100%;
+  padding: 1.25rem 0.5rem;
+  transition: border-color 0.1s;
+}
+.txt-field select {
+  font-size: 1.4rem;
+  color: black;
+  padding: 0rem 0.3rem;
+  border: 1px #bbb solid;
+
+  border-radius: 0.5rem;
+  height: 3.5rem;
+  width: 100%;
+  transition: border-color 0.1s;
+}
+.txt-field button {
+  background: none;
+}
+.txt-field button span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: grey;
+  transform: translate(1.5rem, 1.3rem);
+}
+.txt-field button:hover {
+  background-color: #36919b1e;
+  transition: all 0.2s;
+}
+.txt-field button:hover span {
+  color: black;
+}
+
+.txt-field input:focus {
+  border: 2px blue solid;
+  border-radius: 0.5rem;
+}
+
+.label-animate.jaruri {
+  transform: translate(1rem, -1rem);
+  font-size: 1.2rem;
+  background-color: white;
+  width: fit-content;
+}
+.color-blue {
+  color: blue !important;
+}

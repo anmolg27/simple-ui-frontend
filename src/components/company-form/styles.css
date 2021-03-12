@@ -1,0 +1,101 @@
+.company-form {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.company-form__modal-box {
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem 4rem 1rem 2rem;
+  width: 50rem;
+}
+
+.image-input-col {
+  background-color: #f1f1f1;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+/* .product-form__variant-col {
+    padding-top: 1rem;
+  } */
+.image-input__heading {
+  text-align: center;
+}
+.image-input-box {
+  position: relative;
+}
+.image-input-box > h2 {
+  text-align: end;
+}
+.image-input__controller > label {
+  background-color: rgb(0, 172, 86);
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.image-input__image {
+  overflow: hidden;
+}
+.image-input__image > img {
+  object-fit: cover;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 1rem;
+}
+.image-input__controller {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image-input__controller > input {
+  display: none;
+  visibility: none;
+}
+
+.company-form__btn-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.company-form__submit-btn {
+  width: 10rem;
+
+  font-size: 1.7rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  transition: all 0.3s;
+  border-bottom: 2px solid rgb(6, 136, 129);
+  padding: 0.5rem 1.5rem;
+}
+.company-form__submit-btn > div {
+  /* color: blue; */
+  width: 3rem;
+  height: 3rem;
+}
+.company-form__submit-btn:hover {
+  color: white;
+  background-color: rgb(6, 136, 129);
+}
+@media only screen and (max-width: 992px) {
+  .company-form__modal-box {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .company-form__modal-box {
+    width: 90%;
+  }
+}

@@ -1,0 +1,62 @@
+.home-main-subcontainer .bill-challan-form {
+  justify-content: space-between;
+  margin: 0px;
+  height: calc(100% - 4rem);
+  align-content: start;
+  overflow-y: scroll;
+}
+.bill-challan-form::-webkit-scrollbar {
+  width: 0rem;
+}
+.bill-challan-form .left {
+  text-align: start;
+}
+.bill-challan-form .right {
+  text-align: end;
+}
+.bill-challan-bottom-fields .txt-field {
+  margin-top: 1rem;
+}
+.bill-challan-form .bill-challan-table-container {
+  margin: 1rem auto;
+  height: 68.5%;
+  overflow-y: scroll;
+  border: 0.5rem solid #eee;
+  border-radius: 0.5rem;
+  padding-left: 0;
+  padding-right: 3rem;
+}
+.bill-challan-table-container::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.bill-challan-table-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.bill-challan-table-container::-webkit-scrollbar-thumb {
+  background-color: #36919b;
+}
+
+.bill-challan-table .txt-field {
+  margin-top: 1rem;
+}
+.bill-challan-table {
+  position: relative;
+}
+.bill-challan-table img {
+  cursor: pointer;
+  position: absolute;
+  background-color: rgb(231, 63, 63);
+  padding: 0.7rem;
+  right: -2.5rem;
+  top: 0;
+  transform: translateY(1.5rem);
+}
+.bill-challan-table .input-box {
+  padding: 0 0.2rem;
+}
+.bill-challan-table > div {
+  padding: 0;
+}
+.bill-challan-form .input-box {
+  font-size: 1.2rem;
+}

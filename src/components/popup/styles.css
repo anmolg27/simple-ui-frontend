@@ -1,0 +1,50 @@
+.popup {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 199999;
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.popup__box {
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 3rem 4rem 1rem 4rem;
+  width: 60rem;
+}
+
+.popup__buttons {
+  margin-top: 1rem;
+}
+.popup__buttons > button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-size: 2rem;
+  color: black;
+}
+
+.popup__resolve-button {
+  background-color: springgreen;
+}
+.popup__reject-button {
+  margin-left: 1rem;
+  background-color: rgb(255, 91, 91);
+}
+@media only screen and (max-width: 992px) {
+  .popup__box {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .popup__box {
+    width: 90%;
+  }
+}

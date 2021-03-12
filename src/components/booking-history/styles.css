@@ -1,0 +1,68 @@
+.booking-history {
+}
+.booking-history__table {
+  background-color: #f1f1f1;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.booking-history__header-row {
+  padding-top: 0.5rem;
+  background-color: #797979;
+  color: white;
+}
+.booking-history__header-row > div {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.booking-history__details-box {
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  align-content: flex-start;
+  height: 30rem;
+  overflow-y: scroll;
+}
+.booking-history__details-box::-webkit-scrollbar {
+  width: 0;
+}
+.booking-history__details-row {
+  padding: 0.3rem 0;
+}
+.booking-history__details-row > div {
+  text-align: center;
+}
+.booking-history__view-more {
+  display: flex;
+  justify-content: center;
+}
+.booking-history__view-more > button {
+  color: white;
+  border: none;
+  /* margin: 0 3rem; */
+  padding: 0.2rem 1rem;
+  width: fit-content;
+  /* height: fit-content; */
+  cursor: pointer;
+
+  border-radius: 0.5rem;
+}
+.booking-history__view-more-button {
+  background-color: rgb(81, 255, 0);
+}
+/* .booking-history__edit-button {
+  background-color: rgb(0, 132, 255);
+  margin-left: 1rem;
+} */
+/* @media only screen and (max-width: 992px) {
+} */
+@media only screen and (max-width: 600px) {
+  .booking-history__details-row > div {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .booking-history__header-row > div {
+    font-size: 1.5rem;
+    /* font-weight: 600; */
+    /* text-align: center; */
+  }
+}

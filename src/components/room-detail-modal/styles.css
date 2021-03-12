@@ -1,0 +1,125 @@
+.room-detail__modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.room-detail__modal-box {
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem 4rem 1rem 4rem;
+  width: 60rem;
+  text-align: center;
+}
+.room-detail__modal-box > h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: brown;
+}
+.room-detail__modal-status-edit-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.room-detail__modal-status {
+  margin-right: 2rem;
+}
+.room-detail__modal-current-guest-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 3px;
+}
+.room-detail__modal-edit-button,
+.room-detail__modal-view-button {
+  border: none;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 3px;
+  font-size: 2rem;
+  transition: all 0.1s;
+}
+.room-detail__modal-current-guest-details > div > p {
+  margin-bottom: 0.5rem;
+}
+.room-detail__modal-edit-button {
+  background-color: rgb(177, 236, 41);
+}
+.room-detail__modal-view-button {
+  background-color: rgb(236, 122, 41);
+  margin-left: 1rem;
+}
+.room-detail__modal-current-guest {
+  color: goldenrod;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 3rem;
+  border-radius: 5px;
+}
+.room-detail__modal-buttons > button {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  color: white;
+  font-size: 1.8rem;
+  transition: all 0.1s;
+  margin-top: 0.5rem;
+}
+.room-detail__modal-buttons > button:hover,
+.room-detail__modal-edit-button:hover,
+.room-detail__modal-view-button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.room-detail__modal-buttons > button:not(:first-child) {
+  margin-left: 1rem;
+}
+.show-details-button {
+  background-color: cadetblue;
+}
+.show-bill-button {
+  background-color: rgb(109, 95, 160);
+}
+.edit-checkin-button {
+  background-color: rgb(145, 95, 160);
+}
+.edit-customer-button {
+  background-color: rgb(160, 95, 95);
+}
+.check-out-button {
+  background-color: rgb(160, 121, 95);
+}
+.add-on-button {
+  background-color: rgb(160, 95, 111);
+}
+
+.room-detail__modal-prebookings-content {
+  align-content: flex-start;
+  height: 15rem;
+}
+.room-detail__modal-prebookings-content-row {
+  margin-bottom: 3px;
+}
+.room-detail__modal-prebookings-content-row > div > p {
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 992px) {
+  .room-detail__modal-box {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .room-detail__modal-box {
+    width: 90%;
+  }
+}

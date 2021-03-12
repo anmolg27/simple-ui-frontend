@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  /* color: #00a0c6; */
+  text-decoration: none;
+  cursor: pointer;
+}
+html {
+  font-size: 62.5%;
+}
+
+*:focus {
+  outline: none;
+}
+button:active,
+button:focus {
+  outline: 0;
+}
+.btn {
+  border: none;
+  background: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input:disabled,
+select:disabled {
+  background-color: white;
+  /* background-color: rgb(216, 216, 216); */
+  opacity: 1;
+}
+.black-border__right {
+  border-right: 2px solid black;
+}
+.black-border__left {
+  border-left: 2px solid black;
+}
+.pdf-view {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: calc(100% - 5rem);
+  width: 100%;
+}
